@@ -1,0 +1,7 @@
+Changelog
+=========
+
+1.10.0
+-----
+
+- Initial release for Elgg 1.10 and newer 1.X.
