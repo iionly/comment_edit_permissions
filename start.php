@@ -6,7 +6,7 @@ function comment_edit_permissions_init() {
 	elgg_unregister_plugin_hook_handler('permissions_check', 'object', '_elgg_comments_permissions_override');
 	elgg_register_plugin_hook_handler('permissions_check', 'object', 'comment_edit_permissions_comments_permissions_override');
 
-	if (elgg_is_active_plugin('groups')) {
+	if (elgg_is_active_plugin('discussions')) {
 		elgg_unregister_plugin_hook_handler('permissions_check', 'object', 'discussion_can_edit_reply');
 		elgg_register_plugin_hook_handler('permissions_check', 'object', 'comment_edit_permissions_discussion_can_edit_reply');
 	}
@@ -68,7 +68,7 @@ function comment_edit_permissions_comments_permissions_override($hook, $type, $r
 function comment_edit_permissions_discussion_can_edit_reply($hook, $type, $return, $params) {
 	$entity = $params['entity'];
 	// If not a discussion reply return
-	if (!elgg_instanceof($entity, 'object', 'discussion_reply', 'ElggDiscussionReply')) {
+	if (!elgg_instanceof($entity, 'object', 'discussion_reply')) {
 		return $return;
 	}
 

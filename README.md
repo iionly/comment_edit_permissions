@@ -1,7 +1,7 @@
-Comment Edit Permissions for Elgg 1.10 - 1.12
-=============================================
+Comment Edit Permissions for Elgg 2.0 and newer Elgg 2.X
+========================================================
 
-Latest Version: 1.10.0  
+Latest Version: 2.0.0  
 Released: 2017-04-23  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
