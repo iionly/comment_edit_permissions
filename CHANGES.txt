@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.3.0
+-----
+
+- Elgg 2.3 required at minimum,
+- only minor code cleanup.
+
 2.0.0
 -----
 
