@@ -1,7 +1,7 @@
-Comment Edit Permissions for Elgg 2.3 and newer Elgg 2.X
+Comment Edit Permissions for Elgg 3.0 and newer Elgg 3.X
 ========================================================
 
-Latest Version: 2.3.0  
+Latest Version: 3.0.0  
 Released: 2020-07-12  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
@@ -16,7 +16,7 @@ Defines custom edit/delete permissions for comments, discussion replies and like
 New permissions:
 
 - Comments: outside group context only the comment owner and admins are allowed to edit/delete a comment. Inside group context the group owner also has edit/delete permissions,
-- Discussion replies: outside group context only the discussion reply owner and admins are allowed to edit/delete a discussion reply. Inside group context the group owner also has edit/delete permissions,
+- Discussion replies: same as comments because discussion replies are handled as comments on Elgg 3,
 - Likes: outside group context the like annotation owner, the owner of the entity the like was added to and admins are allowed to delete a like. Inside group context the group owner also has delete permission.
 
 
